@@ -27,7 +27,8 @@
     "prestart": "npm run -s build",
     "test": "eslint src",
     "setup": "npm run restore; npm run migrate",
-    "lint": "eslint --ext .js src migrations scripts"
+    "lint": "eslint --ext .js src migrations scripts",
+    "purge": "pm2 stop all && pm2 delete all"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
